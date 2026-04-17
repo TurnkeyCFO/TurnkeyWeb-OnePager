@@ -159,6 +159,17 @@ body{
   background:rgba(91,33,182,0.03);border-radius:12px;padding:12px 10px;text-align:center;
   border:1px solid rgba(91,33,182,0.05);
 }
+.seg-img{
+  position:relative;overflow:hidden;
+  background-size:cover;background-position:center;
+  border:1px solid rgba(91,33,182,0.08);
+}
+.seg-img .seg-overlay{
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  background:rgba(255,255,255,0.82);
+  backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);
+}
+.seg-img .seg-e,.seg-img .seg-n,.seg-img .seg-s{position:relative;z-index:1}
 .seg-e{font-size:20px;margin-bottom:4px}
 .seg-n{font-size:10.5px;font-weight:700;color:var(--tw-text)}
 .seg-s{font-size:9px;color:var(--tw-text-muted);margin-top:2px}
@@ -297,7 +308,7 @@ body{
       <p class="hero-sub">We design and build conversion-focused websites for small businesses that want to look credible, rank higher, and grow faster online.</p>
     </div>
     <div class="hero-right">
-      <div class="hstat"><div class="hstat-val">50+</div><div class="hstat-label">Sites Launched</div></div>
+      <div class="hstat"><div class="hstat-val">&infin;</div><div class="hstat-label">Revisions Included</div></div>
       <div class="hstat"><div class="hstat-val">4.9&#9733;</div><div class="hstat-label">Client Rating</div></div>
       <div class="hstat"><div class="hstat-val">7 Days</div><div class="hstat-label">Avg First Draft</div></div>
     </div>
@@ -323,10 +334,26 @@ body{
     <div class="ey">Who We Serve</div>
     <div class="ct">Built for Small Businesses That Need to Grow</div>
     <div class="seg-grid">
-      <div class="seg"><div class="seg-e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c-4-2-8-6-8-11a4 4 0 0 1 8 0 4 4 0 0 1 8 0c0 5-4 9-8 11z"/><path d="M12 8v6"/><path d="M9 12h6"/></svg></div><div class="seg-n">Landscaping</div><div class="seg-s">Lawn care &amp; outdoor design</div></div>
-      <div class="seg"><div class="seg-e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="12" width="6" height="10" rx="1"/><rect x="9" y="8" width="6" height="14" rx="1"/><rect x="16" y="4" width="6" height="18" rx="1"/><path d="M2 22h20"/></svg></div><div class="seg-n">Construction</div><div class="seg-s">Contractors &amp; trades</div></div>
-      <div class="seg"><div class="seg-e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><div class="seg-n">Professional Services</div><div class="seg-s">Law, accounting, advisory</div></div>
-      <div class="seg"><div class="seg-e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="seg-n">Home Services</div><div class="seg-s">HVAC, plumbing, cleaning</div></div>
+      <div class="seg seg-img" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=400&q=80')">
+        <div class="seg-overlay"></div>
+        <div class="seg-e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20l4-16"/><path d="M2 15c2-1 4.5-2 7-1s5 1 7-1"/><circle cx="18" cy="8" r="3"/><path d="M18 5V3"/><path d="M20.5 6.5l1-1"/><path d="M21 9h2"/></svg></div>
+        <div class="seg-n">Landscaping</div><div class="seg-s">Lawn care &amp; outdoor design</div>
+      </div>
+      <div class="seg seg-img" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80')">
+        <div class="seg-overlay"></div>
+        <div class="seg-e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="12" width="6" height="10" rx="1"/><rect x="9" y="8" width="6" height="14" rx="1"/><rect x="16" y="4" width="6" height="18" rx="1"/><path d="M2 22h20"/></svg></div>
+        <div class="seg-n">Construction</div><div class="seg-s">Contractors &amp; trades</div>
+      </div>
+      <div class="seg seg-img" style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=400&q=80')">
+        <div class="seg-overlay"></div>
+        <div class="seg-e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div class="seg-n">Professional Services</div><div class="seg-s">Law, accounting, advisory</div>
+      </div>
+      <div class="seg seg-img" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=400&q=80')">
+        <div class="seg-overlay"></div>
+        <div class="seg-e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="seg-n">Home Services</div><div class="seg-s">HVAC, plumbing, cleaning</div>
+      </div>
     </div>
   </div>
 </div>
